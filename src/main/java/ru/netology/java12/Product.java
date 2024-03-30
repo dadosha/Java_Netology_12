@@ -7,11 +7,9 @@ public class Product {
     protected String title;
     protected int price;
 
-    public void setTitle(String title) {
+    public Product(int id, String title, int price) {
+        this.id = id;
         this.title = title;
-    }
-
-    public void setPrice(int price) {
         this.price = price;
     }
 
@@ -23,13 +21,15 @@ public class Product {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public int getPrice() {
         return price;
     }
 
-    public Product(int id, String title, int price) {
-        this.id = id;
-        this.title = title;
+    public void setPrice(int price) {
         this.price = price;
     }
 
